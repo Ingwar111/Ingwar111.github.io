@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск красотки</title>
+</head>
+<body>
+    <h1>Выберите критерии поиска</h1>
+    <form action="https://fom.in.ua/echo" method="get">
+        <fieldset>
+            <legend>Подбор авто</legend>
+        <label>
+            <select name="car_type">
+            <option value="все виды">все виды</option>
+            <option value="легковые">легковые</option>
+            <option value="мото">мото</option>
+            <option value="грузовые">грузовые</option>
+            <option value="прицепы">прицепы</option>
+            <option value="спец техника">спец техника</option>
+            <option value="сельхозтехника">сельхозтехника</option>
+            <option value="автобусы">автобусы</option>
+            <option value="водный транспорт">водный транспорт</option>
+            <option value="воздушный">воздушный</option>
+            <option value="дома на колесах">дома на колесах</option>
+           </select>
+         </label>
+         <label>
+             <select name="coutry">
+                 <option value="Все">Все</option>
+                 <option value="USA">Америка</option>
+                 <option value="Ukraine">Украина</option>
+                 <option value="Germany">Германия</option>
+                 <option value="Japan">Япония</option>
+             </select>
+         </label>
+         <label>
+             <select name="Brand">
+                <option value="все">Все</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="BMW">BMW</option>
+                <option value="ZAZ">ZAZ</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+             </select>
+         </label>
+         <label>
+             <select name="Model">
+                 <option value="все">все</option>
+                 <option value="Lancer">Lancer</option>
+                 <option value="lanos">lanos</option>
+                 <option value="focus">focus</option>
+                 <option value="fiesta">fiesta</option>
+                 <option value="camry">camry</option>
+                 <option value="190">190</option>
+                 <option value="318">318</option>
+             </select>
+         </label>
+         <p>Год производства</p>
+        от<input type="range" name="minimal_year" min="1950" max="2022">
+        до<input type="range" name="maximal_year"  min="1950" max="2022">
+    </fieldset>
+    <Fieldset>
+        <legend>Цена</legend>
+        <input type="text" name="minimal_cost" placeholder="ОТ">
+        <input type="text" name="maximum_cost" placeholder="ДО">
+         <select name="валюта" >
+             <option value="dollar">Доллар</option>
+             <option value="euro">Евро</option>
+             <option value="uah">Гривны</option>
+         </select>
+        </Fieldset>
+        <fieldset>
+            <legend>Город</legend>
+            <table  border="0">
+                <tr align="right">
+                    <td>
+
+                    <label>
+                    Киев<input type="checkbox" name="City" value="Киев">
+                </label>
+            </td>
+                    <td><label>Винница<input type="checkbox" name="City" value=Винница"></label></td>
+                    <td><label>Житомир<input type="checkbox" name="City" value="Житомир"></label></td>
+                    <td><label>Кировоград<input type="checkbox" name="City" value="Кировоград"></label></td>
+                    <td><label>Полтава<input type="checkbox" name="City" value="Полтава"></label></td>
+                    <td><label>Суммы<input type="checkbox" name="City" value="Суммы"></label></td>
+                </tr>
+                <tr align="right">
+                    <td><label>Львов<input type="checkbox" name="City" value="Львов"></label></td>
+                    <td><label>Волынь<input type="checkbox" name="City" value="Волынь"></label></td>
+                    <td><label>Закарпатье<input type="checkbox" name="City" value="Закарпатье"></label></td>
+                    <td><label>Ровно<input type="checkbox" name="City" value="Ровно"></label></td>
+                    <td><label>Тернополь<input type="checkbox" name="City" value="Тернополь"></label></td>
+                    <td><label>Хмельницкий<input type="checkbox" name="City" value="Хмельницкий"></label></td>
+                </tr>
+                <tr align="right">
+                    <td><label>Одесса<input type="checkbox" name="City" value="Одесса"></label></td>
+                    <td><label>Херсон<input type="checkbox" name="City" value="Херсон"></label></td>
+                    <td><label>Николаев<input type="checkbox" name="City" value="Николаев"></label></td>
+                    <td><label>Запорожье<input type="checkbox" name="City" value="Запорожье"></label></td>
+                    <td><label>Днепр<input type="checkbox" name="City" value="Днепр"></label></td>
+                    <td><label>Черновцы<input type="checkbox" name="City" value="Черновцы"></label></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Цвет это самое важное!!!</legend>
+         <input type="color" value="#00ff00" disabled>
+         <input type="checkbox" value="green" name="car_color">
+         <input type="color" value="#ff0000" disabled>
+         <input type="checkbox" value="red" name="car_color">
+         <input type="color" value="#000000" disabled>
+         <input type="checkbox" value="black" name="car_color">
+         <input type="color" value="#ffffff" disabled>
+         <input type="checkbox" value="white" name="car_color"><br>
+         <input type="color" value="#0000ff" disabled>
+         <input type="checkbox" value="blue" name="car_color">
+         <input type="color" value="#ff8000" disabled>
+         <input type="checkbox" value="orange" name="car_color">
+         <input type="color" value="#ffff00" disabled>
+         <input type="checkbox" value="yellow" name="car_color">
+         <input type="color" value="#c0c0c0" disabled>
+         <input type="checkbox" value="grey" name="car_color">
+        </fieldset>
+        Состояние:<select name="conditions">
+            <option value="all">Все</option>
+            <option value="no_damage">Полностью исправна</option>
+            <option value="pro_repaired">Профессионально отремонтировано</option>
+            <option value="need_repair">Не отремонтированные повреждения</option>
+            <option value="trash">Не находу</option>
+        </select><br>
+             Участие в дтп: <select name="crash">
+                <option value="all">Все</option>
+                <option value="no_crash">Без ДТП</option>
+                <option value="after_crash">Досле ДТП</option>
+            </select><br>
+            
+            Тип топлива:
+            <label><input type="checkbox" name="petrol">Бензин</label>
+            <label><input type="checkbox" name="disel">Дизель</label>
+            <label><input type="checkbox" name="gas">Газ</label>
+            <label><input type="checkbox" name="gas/petrol">Газ/Бензин</label>
+            <label><input type="checkbox" name="hybrid">Гибрид</label>
+            <label><input type="checkbox" name="electric">Електро</label>
+            <label><input type="checkbox" name="other">Другие</label><br>
+             Растаможенные:
+                <label><input type="radio" name="tamozjnya" value="All">Все</label>
+                <label><input type="radio" name="tamozjnya" value="Растаможеные">Растаможеные</label>
+                <label><input type="radio" name="tamozjnya" value="Не растаможеные">Не растаможены</label>
+            <details>
+                <summary>Мультимедиа</summary>
+                 <label><input type="checkbox" name="CD">CD</label>
+                 <label><input type="checkbox" name="MP3">MP3</label>
+                 <label><input type="checkbox" name="DVD">DVD</label>
+                 <label><input type="checkbox" name="GPS">GPS</label>
+            </details>
+             <br>
+
+        
+         <input type="submit" value="Поехали!!!">
+         <input type="reset" value="Сброс">
+    </form>
+    
+</body>
+</html>
